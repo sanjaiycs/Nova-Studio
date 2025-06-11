@@ -1,0 +1,218 @@
+.project-details {
+    padding-top: 80px;
+  }
+  
+  .parallax-section {
+    position: relative;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    transform: translateZ(0);
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  
+  /* Project Hero Section */
+  .project-hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://placehold.co/1920x1080');
+    background-size: cover;
+    background-position: center;
+    color: var(--text);
+  }
+  
+  .project-hero-content {
+    max-width: 800px;
+    padding: 0 1.5rem;
+  }
+  
+  .project-hero .project-title {
+    font-size: 4.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+  }
+  
+  .project-hero .project-category {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary);
+  }
+  
+  /* Project Overview Section */
+  .project-overview {
+    padding: 8rem 0;
+    background: var(--bg);
+  }
+  
+  .project-description {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    margin-bottom: 4rem;
+    max-width: 800px;
+  }
+  
+  .project-meta {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  
+  .meta-item h3 {
+    font-size: 1.2rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Problem Statement Section */
+  .problem-statement {
+    padding: 8rem 0;
+    background: var(--card-bg);
+  }
+  
+  .problem-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+  
+  .problem-image img {
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow: var(--card-shadow);
+  }
+  
+  /* Solution Section */
+  .solution {
+    padding: 8rem 0;
+    background: var(--bg);
+  }
+  
+  .solution-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+  
+  .solution-features {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0;
+  }
+  
+  .solution-features li {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+  }
+  
+  .solution-features li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+  }
+  
+  .solution-image img {
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow: var(--card-shadow);
+  }
+  
+  /* Process Section */
+  .process {
+    padding: 8rem 0;
+    background: var(--card-bg);
+  }
+  
+  .process-steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 4rem;
+  }
+  
+  .step {
+    padding: 2rem;
+    background: var(--bg);
+    border-radius: 1rem;
+    border: 2px solid var(--text);
+    transition: all var(--transition);
+  }
+  
+  .step:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--card-shadow);
+  }
+  
+  .step h3 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+  }
+  
+  /* Results Section */
+  .results {
+    padding: 8rem 0;
+    background: var(--bg);
+  }
+  
+  .results-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin-top: 4rem;
+  }
+  
+  .result-item {
+    padding: 2rem;
+    background: var(--card-bg);
+    border-radius: 1rem;
+    border: 2px solid var(--text);
+  }
+  
+  .result-item h3 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .process-steps {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .project-hero .project-title {
+      font-size: 3rem;
+    }
+    
+    .project-meta,
+    .problem-content,
+    .solution-content,
+    .results-content {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    
+    .process-steps {
+      grid-template-columns: 1fr;
+    }
+    
+    .project-overview,
+    .problem-statement,
+    .solution,
+    .process,
+    .results {
+      padding: 4rem 0;
+    }
+  } 
